@@ -1,4 +1,4 @@
-```sql
+
 -- Database Setup
 CREATE DATABASE EcommerceDB;
 USE EcommerceDB;
@@ -216,4 +216,4 @@ DELETE FROM Customer WHERE CustomerID = 2;
 
 -- The orders belonging to CustomerID 2 should be deleted.
 SELECT * FROM Orders WHERE CustomerID = 2;
-```
+
