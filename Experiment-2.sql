@@ -1,4 +1,3 @@
-
 -- Database Setup
 CREATE DATABASE EcommerceDB;
 USE EcommerceDB;
