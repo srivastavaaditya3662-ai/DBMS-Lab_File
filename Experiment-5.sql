@@ -252,43 +252,23 @@ FOREIGN KEY (manager_id) REFERENCES Employee(emp_id);
 
 -- IT
 UPDATE Employee SET manager_id = NULL WHERE emp_id = 1;
-UPDATE Employee SET manager_id = 1 WHERE emp_id = 2;
-UPDATE Employee SET manager_id = 2 WHERE emp_id = 3;
-UPDATE Employee SET manager_id = 3 WHERE emp_id = 4;
-UPDATE Employee SET manager_id = 4 WHERE emp_id = 5;
-UPDATE Employee SET manager_id = 5 WHERE emp_id = 6;
+UPDATE Employee SET manager_id = 1 WHERE emp_id IN (2, 3, 4, 5, 6);
 
 -- HR
 UPDATE Employee SET manager_id = NULL WHERE emp_id = 7;
-UPDATE Employee SET manager_id = 7 WHERE emp_id = 8;
-UPDATE Employee SET manager_id = 8 WHERE emp_id = 9;
-UPDATE Employee SET manager_id = 9 WHERE emp_id = 10;
-UPDATE Employee SET manager_id = 10 WHERE emp_id = 11;
-UPDATE Employee SET manager_id = 11 WHERE emp_id = 12;
+UPDATE Employee SET manager_id = 7 WHERE emp_id IN (8, 9, 10, 11, 12);
 
 -- Finance
 UPDATE Employee SET manager_id = NULL WHERE emp_id = 13;
-UPDATE Employee SET manager_id = 13 WHERE emp_id = 14;
-UPDATE Employee SET manager_id = 14 WHERE emp_id = 15;
-UPDATE Employee SET manager_id = 15 WHERE emp_id = 16;
-UPDATE Employee SET manager_id = 16 WHERE emp_id = 17;
-UPDATE Employee SET manager_id = 17 WHERE emp_id = 18;
+UPDATE Employee SET manager_id = 13 WHERE emp_id IN (14, 15, 16, 17, 18);
 
 -- Marketing
 UPDATE Employee SET manager_id = NULL WHERE emp_id = 19;
-UPDATE Employee SET manager_id = 19 WHERE emp_id = 20;
-UPDATE Employee SET manager_id = 20 WHERE emp_id = 21;
-UPDATE Employee SET manager_id = 21 WHERE emp_id = 22;
-UPDATE Employee SET manager_id = 22 WHERE emp_id = 23;
-UPDATE Employee SET manager_id = 23 WHERE emp_id = 24;
+UPDATE Employee SET manager_id = 19 WHERE emp_id IN (20, 21, 22, 23, 24);
 
 -- Operations
 UPDATE Employee SET manager_id = NULL WHERE emp_id = 25;
-UPDATE Employee SET manager_id = 25 WHERE emp_id = 26;
-UPDATE Employee SET manager_id = 26 WHERE emp_id = 27;
-UPDATE Employee SET manager_id = 27 WHERE emp_id = 28;
-UPDATE Employee SET manager_id = 28 WHERE emp_id = 29;
-UPDATE Employee SET manager_id = 29 WHERE emp_id = 30;
+UPDATE Employee SET manager_id = 25 WHERE emp_id IN (26, 27, 28, 29, 30);
 
 
 -- ============================================================
